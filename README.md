@@ -34,7 +34,7 @@ To run or build this Android project locally, ensure you have:
 1. **Node.js** (v20+ recommended)
 2. **Java JDK 21** (Required by Gradle for Android 34+)
    > [!IMPORTANT]
-   > **Windows Users:** Ensure your system `JAVA_HOME` environment variable points to your JDK 21 installation (e.g., `C:\Program Files\Java\jdk-21.0.10`). If `JAVA_HOME` points to an older JDK 17 folder that lacks `java.exe`, Gradle wrapper (`gradlew.bat` / `npx cap run android`) will fail immediately.
+   > **Windows Users:** To guarantee out-of-the-box seamless compilation, `set JAVA_HOME=C:\Program Files\Java\jdk-21.0.10` is explicitly embedded inside `android\gradlew.bat`. This ensures Gradle and Capacitor automatically locate Java 21 regardless of external system environment variables.
 3. **Android Studio** (with Android SDK 34/35 installed)
 
 ---
@@ -44,7 +44,7 @@ To run or build this Android project locally, ensure you have:
 ### 1. Installation
 Clone this repository and install the native Capacitor CLI and plugins:
 ```bash
-git clone https://github.com/your-username/referralverse-mobile.git
+git clone https://github.com/taterlaxmi/referralverse-mobile.git
 cd referralverse-mobile
 npm install
 ```
