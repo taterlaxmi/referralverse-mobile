@@ -1,26 +1,26 @@
-# ReferralVerse Mobile App 📱
+﻿# ReferralVerse Mobile App
 
-This repository contains the **Native Android Container** for [ReferralVerse](https://referralverse.in), built using **Capacitor 6+**.
+This repository contains the **Native Android Container** for [ReferralVerse](https://referralverse.in), built using **Capacitor 8**.
 
 ---
 
-## 🏛️ Architecture Overview
+## Architecture Overview
 
 ReferralVerse operates on a clean decoupled dual-repository architecture:
 1. **Web Repository (`ReferralVerse`)**: Core Next.js React application, API endpoints, and mobile UI detection hooks (`BottomNav.tsx`).
 2. **Mobile Repository (`ReferralVerse-Mobile`)**: Native Android shell wrapping the live website inside an advanced native Webview.
 
-```
-┌────────────────────────────────────────┐         ┌────────────────────────────────────────┐
-│         ReferralVerse (Web Repo)       │         │    ReferralVerse-Mobile (Mobile Repo)  │
-├────────────────────────────────────────┤         ├────────────────────────────────────────┤
-│ • Next.js & React source code          │ ◄────── │ • Native Android Project (android/)    │
-│ • BottomNav.tsx & useCapacitor.ts      │  Loads  │ • App Icons & Splash screens (assets/) │
-│ • @capacitor/core & @capacitor/app     │ Web URL │ • capacitor.config.ts (server.url)     │
-└────────────────────────────────────────┘         └────────────────────────────────────────┘
+```text
++------------------------------------+         +------------------------------------+
+|      ReferralVerse (Web Repo)      |         | ReferralVerse-Mobile (Mobile Repo) |
++------------------------------------+         +------------------------------------+
+| * Next.js & React source code      | ======= | * Native Android Project (android/)|
+| * BottomNav.tsx & useCapacitor.ts  |  Loads  | * App Icons & Splash (assets/)     |
+| * @capacitor/core & @capacitor/app | Web URL | * capacitor.config.ts (server.url) |
++------------------------------------+         +------------------------------------+
 ```
 
-### ⚡ Key Features of this Mobile App Shell:
+### Key Features of this Mobile App Shell:
 - **Live URL Wrapper**: Configured in `capacitor.config.ts` (`server.url: 'https://referralverse.in'`). App updates to the web UI are instantly reflected without requiring App Store updates.
 - **Java 21 Toolchain**: Pre-configured in Gradle to ensure flawless compilation across all development environments.
 - **Native Splash Screen & Icons**: Optimized using `@capacitor/assets`.
@@ -28,7 +28,7 @@ ReferralVerse operates on a clean decoupled dual-repository architecture:
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 To run or build this Android project locally, ensure you have:
 1. **Node.js** (v20+ recommended)
@@ -39,7 +39,7 @@ To run or build this Android project locally, ensure you have:
 
 ---
 
-## 🚀 Getting Started & Local Development
+## Getting Started & Local Development
 
 ### 1. Installation
 Clone this repository and install the native Capacitor CLI and plugins:
@@ -69,7 +69,7 @@ npm run open
 
 ---
 
-## 📦 Building for Production (APK / App Bundle)
+## Building for Production (APK / App Bundle)
 
 To generate a standalone release APK or Android App Bundle (AAB) for publishing to the **Amazon Appstore** or Google Play:
 
