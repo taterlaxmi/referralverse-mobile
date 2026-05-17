@@ -1,0 +1,22 @@
+{
+  "name": "referral-verse-mobile",
+  "version": "1.0.0",
+  "description": "Native Android mobile container for ReferralVerse using Capacitor",
+  "private": true,
+  "scripts": {
+    "sync": "cap sync android",
+    "run": "cap run android",
+    "open": "cap open android",
+    "build": "cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.4",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/cli": "^8.3.4",
+    "@capacitor/core": "^8.3.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "typescript": "^5.4.5"
+  }
+}

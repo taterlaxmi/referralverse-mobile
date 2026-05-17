@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ReferralVerse</string>
+    <string name="title_activity_main">ReferralVerse</string>
+    <string name="package_name">com.referralverse.app</string>
+    <string name="custom_url_scheme">com.referralverse.app</string>
+</resources>
