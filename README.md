@@ -33,6 +33,8 @@ ReferralVerse operates on a clean decoupled dual-repository architecture:
 To run or build this Android project locally, ensure you have:
 1. **Node.js** (v20+ recommended)
 2. **Java JDK 21** (Required by Gradle for Android 34+)
+   > [!IMPORTANT]
+   > **Windows Users:** Ensure your system `JAVA_HOME` environment variable points to your JDK 21 installation (e.g., `C:\Program Files\Java\jdk-21.0.10`). If `JAVA_HOME` points to an older JDK 17 folder that lacks `java.exe`, Gradle wrapper (`gradlew.bat` / `npx cap run android`) will fail immediately.
 3. **Android Studio** (with Android SDK 34/35 installed)
 
 ---
